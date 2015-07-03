@@ -3,18 +3,6 @@ grails:
     profile: web
     codegen:
         defaultPackage: testdocsbuild
-info:
-    app:
-        name: '@info.app.name@'
-        version: '@info.app.version@'
-        grailsVersion: '@info.app.grailsVersion@'
-spring:
-    groovy:
-        template:
-            check-template-location: false
-
----
-grails:
     mime:
         disable:
             accept:
@@ -67,7 +55,16 @@ grails:
 hibernate:
     cache:
         queries: false
----
+info:
+    app:
+        name: '@info.app.name@'
+        version: '@info.app.version@'
+        grailsVersion: '@info.app.grailsVersion@'
+spring:
+    groovy:
+        template:
+            check-template-location: false
+
 dataSource:
     pooled: true
     jmxExport: true
